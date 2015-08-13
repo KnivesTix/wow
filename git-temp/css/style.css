@@ -8,7 +8,6 @@ body{
     src: url(../font/lobster.ttf);
    }
 
-
 .background-head {
 	position: absolute;
 	height: 100px;
@@ -28,6 +27,7 @@ body{
 	margin: auto;
 	left: 60px;
 }
+
 .logo-text{
 	position: relative;
 	font-family: "Lobster"; 
@@ -40,6 +40,7 @@ body{
 	margin: auto;
 	
 }
+
 .slogan{
 	position: relative;
 	font-family: Arial;
@@ -54,10 +55,12 @@ body{
 	position: relative;
 	left: 550px;
 }
+
 .facebook{
 	position: relative;
 	left: 560px;
 }
+
 .rss{
 	position: relative;
 	left: 570px;
@@ -75,17 +78,18 @@ body{
 	top: 100px;
 	height: 45px;
 	width: 100%;
-	
 /*	margin: 0 auto;*/
 	border-top: 1px dashed #948e8d;
 	border-bottom: 1px dashed #948e8d;; 
 }
+
 .header-menu nav{
 	position: relative;
 	left: 29px;
 	margin: 0 auto;
 	padding-top: 15px;
 }
+
 .header-menu a{
 	font-size: 12pt;
 	font-weight: 600;
