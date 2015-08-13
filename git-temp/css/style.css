@@ -1,0 +1,105 @@
+body{
+	background: url(../images/background-body.png);
+	width: 100%;
+}
+
+@font-face {
+    font-family: "Lobster"; 
+    src: url(../font/lobster.ttf);
+   }
+
+
+.background-head {
+	position: absolute;
+	height: 100px;
+	width: 100%;
+}
+
+.logo-wrap{
+	position: relative;
+	top: 20px;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.header .separator{
+	position: relative;
+	/*top: 32px;*/
+	margin: auto;
+	left: 60px;
+}
+.logo-text{
+	position: relative;
+	font-family: "Lobster"; 
+	color: #ffffff;
+	font-size: 250%;
+	/*-webkit-box-reflect: below;0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255,255,255,0.2)));*/
+
+	left: 50px;
+	/*top: 30px;*/
+	margin: auto;
+	
+}
+.slogan{
+	position: relative;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 69.5%;
+	/*top: 30px;*/
+	left: 70px;
+	margin: auto;
+}
+
+.twitter{
+	position: relative;
+	left: 550px;
+}
+.facebook{
+	position: relative;
+	left: 560px;
+}
+.rss{
+	position: relative;
+	left: 570px;
+}
+
+.header-menu{
+	position: relative;
+	top: 50px;
+	width: 1000px;
+	margin: 0 auto;	
+}
+
+.background-menu{
+	position: absolute;
+	top: 100px;
+	height: 45px;
+	width: 100%;
+	
+/*	margin: 0 auto;*/
+	border-top: 1px dashed #948e8d;
+	border-bottom: 1px dashed #948e8d;; 
+}
+.header-menu nav{
+	position: relative;
+	left: 29px;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+.header-menu a{
+	font-size: 12pt;
+	font-weight: 600;
+	padding: 2px 21px 2px 21px;
+	color: #3e3e3e;
+	text-decoration: none;
+}
+
+.header-menu a:hover{
+	border-radius: 2px;
+	background: #65625f;
+	color: #ffffff;
+}
+
+
+
+
