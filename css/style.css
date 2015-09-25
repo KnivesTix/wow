@@ -111,6 +111,7 @@ header{
 	width: 16%;
 	/*float: left;*/
 	position: fixed;
+	display: block;
 	height: 100%;
 }
 
@@ -135,14 +136,14 @@ header{
 	width: 100%;
 	padding-bottom: 12px;
 	border-bottom: 1px solid #eeeeee;
-	background: url(../images/menu-image.png) no-repeat;
-	background-position: 100% -1px;
+	/*background: url(../images/menu-image.png) no-repeat;
+	background-position: 100% -1px;*/
 	height: 20px;
 }
 
 
 .left-sidebar li:hover{
-	background-position: 100% -61px;
+	/*background-position: 100% -61px;*/
 }
 
 
@@ -171,13 +172,14 @@ header{
 
 .short-news{
 	padding: 2%;
-	height: 165px;
+	height: auto;
 }
 
 .news-pic {
 	float: left;
 	padding: 5px;
 	border: 1px solid #dddbdb;
+	
 }
 
 .short-news h3{
@@ -192,11 +194,11 @@ header{
 
 .short-news p{
 	font-family: Arial;
-	font-size: 90%;
+	font-size: 100%;
 	margin: 0px;
 	margin-left: 180px;
 	padding:  20px 0px;
-	border-bottom:  1px dashed #bebebe;
+	/*border-bottom:  1px dashed #bebebe;*/
 
 }
 .category{
@@ -218,26 +220,28 @@ header{
 
 .information {
 	position: relative;
-	padding-top: 7px;
-	padding-bottom: 7px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	margin: 0px;
-	width: 84%;
+	/*width: 84%;*/
 	margin-left: 180px;
-	border-bottom: 1px dashed #bebebe ;
+	border-bottom: 1px dashed #bebebe;
+	border-top: 1px dashed #bebebe;
 }
 
 .comment-pic{
 	margin-left: 10px;
-	margin-top: 5px;
+	/*margin-top: 5px;*/
 }
-
+ 
 .information a{
 	height: 15px;
 	color: #353535;
-	font-size: 100%;
+	font-size: 90%;
 	padding-right: 5px;
 	border-right: 1px dotted #000;
 	text-decoration: none;
+	padding-bottom: 2px;
 }
 
 .information a:hover{
@@ -248,32 +252,34 @@ header{
 
 .view{
 	position: absolute;
-	left: 180px;
-	top: 16px;
+	left: 150px;
+	top: 7px;
 }
 
 .information span{
 	position: absolute;
 	left: 200px;
 	color: #353535;
-	font-size: 100%;
-	padding-top: 5px;
+	font-size: 90%;
+	/*padding-top: 5px;*/
 }
 
-.continue{
+.information .continue{
 	float: right;
+	/*padding-top: 5px;*/
+	border: none;
 }
 
 .long-news{
 	padding: 2%;
-	padding-top: 4%;
+	margin-top: 20px;
 }
 
 .long-news h3{
 	font-family: Arial;
 	font-size: 120%;
 	/*padding-left: 180px;*/
-	padding-bottom: 20px;
+	padding-bottom: 1%;
 	border-bottom: 1px solid #e0e0e0;
 	margin: 0px;
 
@@ -282,12 +288,11 @@ header{
 .long-news span{
 	float: right;
 	font-family: Arial;
-	font-size: 70%;
+	font-size: 60%;
 	color: #000;
 	height: 30px;
 	font-weight: 100;
 	padding-left: 15px;
-	padding-bottom: 10px;
 	border-left: 1px dotted #000;
 
 }
@@ -334,6 +339,52 @@ td{
 	padding-top: 10px;
 }
 
+.comment img{
+	padding-top: 40px;
+	position: relative;
+	left: -112px;
+}
+
+.block {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0px;
+    position: relative;
+    width: 90%;
+    float: right;
+   }
+
+.block::before, .block::after {
+    content: ''; 
+    position: absolute;
+    top: 20px; left: -20px;
+    border: 10px solid transparent;
+    border-right: 10px solid #000;
+   }
+
+.block::after {
+    border-right: 10px solid white;
+    left: -19px; 
+   }
+
+.comment p{
+	margin: 0px;
+	font-weight: 700;
+	color: red;
+}
+
+.block img{
+	float: left;
+	padding: 0px;
+	padding-left: 150px;
+}
+
+.block span{
+float: left;
+padding: 0px;
+}
+
 .search-box{
 	position: absolute;
 	top: 109px;
@@ -374,6 +425,10 @@ td{
 	margin: 0px auto;
 }
 
+ .display{
+	display: block;
+	display:  inline-block;
+}
 .left_swap{
 	display: none;
 	position: fixed;
@@ -389,9 +444,6 @@ td{
 	.left-sidebar a{
 		font-size: 80%;
 	}
-	.left-sidebar{
-		display: block;
-	}
 
 	.main{
 		margin: 70px 0px;
@@ -405,6 +457,9 @@ td{
 	.left-sidebar li{
 		background-position: 100% -1px;
 	}
+	.short-news h3{
+		font-size: 95%;
+	}
 }
 
 @media (max-width: 1050px){
@@ -412,16 +467,30 @@ td{
 		font-size: 75%;
 	}
 
-	
-
 	.breadcrumb{
 		font-size: 75%;
 	}
 	.left-sidebar{
 		display: block;
-		
 	}
+	.short-news h3{
+		font-size: 90%;
+	}
+	.information{
+		font-size: 80%;
+	}
+	.information .view{
+		left: 140px;
+	}
+	.short-news span{
+		left: 160px;
+	}
+	.long-news h3{
+		font-size: 100%;
+	}
+	
 }
+
 /*1186*/
 @media (max-width: 850px){
 	.left-sidebar{
@@ -433,6 +502,10 @@ td{
 		border-right:  1px solid #eeeeee;
 		border-top: 1px solid #eeeeee;
 		border-radius: 8px;
+	}
+
+	.display-menu{
+		display: block;
 	}
 
 	 .left_swap{
